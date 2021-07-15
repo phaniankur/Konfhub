@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Line, Pie } from "react-chartjs-2";
+import {Pie } from "react-chartjs-2";
 import axios from "axios";
 
 const Charts = () => {
@@ -11,7 +11,6 @@ const Charts = () => {
     axios
       .post("https://nwmxjrs4cb.execute-api.ap-south-1.amazonaws.com/prod/talent/profiles")
       .then(res => {
-        console.log(res.data.profiles)
         for (const dataObj of res.data.profiles) {
           jobRole.push(String(dataObj.jobRole));
           experience.push(parseInt(dataObj.experience));
