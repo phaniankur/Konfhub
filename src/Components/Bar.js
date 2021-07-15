@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Bar, Pie } from "react-chartjs-2";
+import { Bar} from "react-chartjs-2";
 import axios from "axios";
 
 const Piechart = () => {
   const [chartData, setChartData] = useState({});
-  const [employeeSalary, setEmployeeSalary] = useState([]);
-  const [employeeAge, setEmployeeAge] = useState([]);
 
   const chart = () => {
     let location = [];
@@ -49,7 +47,6 @@ const Piechart = () => {
       .catch(err => {
         console.log(err);
       });
-    console.log(number);
   };
 
   useEffect(() => {

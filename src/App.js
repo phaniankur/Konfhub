@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import MaterialTable from "material-table";
+import React from "react";
 import Pie from './Components/Pie'
 import Charts from './Components/Charts'
 import BarChart from "./Components/Bar";

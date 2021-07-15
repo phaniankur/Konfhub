@@ -11,7 +11,7 @@ function Table() {
     { title: "Name", field: "name" },
     { title: "Job Role", field: "jobRole" },
     { title: "Level", field: "proficiencyLevel" },
-    { title: "State", field: 'state' },
+    { title: "Skills", field: 'skills' },
     { title: "City", field: 'city' },
     { title: "LinkedIn", field: 'linkedinUrl' }
   ]
@@ -28,10 +28,10 @@ function Table() {
   }, []);
     return (
             <MaterialTable
-        title="Employee Data"
-        data={data.profiles}
-        columns={columns}
-      />
+              title="Employee Data"
+              data={data.profiles}
+              columns={columns}
+            />
     )
 }
 
